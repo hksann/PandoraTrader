@@ -2,22 +2,24 @@
 <Config Generated_at="2016-12-26 23:21:47">
   <!-- Configs for PandoraSimulator -->
   <User type="2">
-    <SimulatorServer Front="F:\HisData\HisMarketDataIndex.xml" Interval="0" Instrument="F:\HisData\Instrument.xml"/>
+    <!-- Ensure the paths are valid on your Linux file system -->
+    <SimulatorServer Front="/path/to/HisData/HisMarketDataIndex.xml" Interval="0" Instrument="/path/to/HisData/Instrument.xml"/>
     <Account PreBalance="0"/>
   </User>
   <Subscription>
-<!--
-    <Instrument ID="j1909"/>
--->
+    <!-- Instruments can be uncommented or added as needed -->
+    <!-- <Instrument ID="j1909"/> -->
   </Subscription>
-    <StrategyConfigFile>
-
-    </StrategyConfigFile>
+  <StrategyConfigFile>
+    <!-- Specify the strategy configuration file path if necessary -->
+  </StrategyConfigFile>
  <Result>
-  	<TotalResult bSave="1" Interval="10" />
-  	<InsResult ID="IC1907" bSave="0" Interval="1"/>
+    <!-- Settings for results saving and intervals -->
+    <TotalResult bSave="1" Interval="10" />
+    <InsResult ID="IC1907" bSave="0" Interval="1"/>
   </Result>
   <System>
-    <Cache Need="0" Path="" Instrument="MA305,pp2305"/>
+    <!-- Set cache needs and paths -->
+    <Cache Need="0" Path="/path/to/cache" Instrument="MA305,pp2305"/>
   </System>
 </Config>
